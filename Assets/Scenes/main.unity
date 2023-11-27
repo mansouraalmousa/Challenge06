@@ -198,9 +198,25 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 471269105921931128, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
+      propertyPath: laser
+      value: 
+      objectReference: {fileID: 6733362236909201765, guid: 69f57c5a1e37b274e902a502db5d3b4e,
+        type: 3}
+    - target: {fileID: 471269105921931128, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
+      propertyPath: Grange
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 471269105921931128, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 1533072514}
+    - target: {fileID: 471269105921931128, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
+      propertyPath: playerc
+      value: 
+      objectReference: {fileID: 951255695}
     - target: {fileID: 471269105921931128, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: m_Enabled
@@ -2316,6 +2332,11 @@ PrefabInstance:
       objectReference: {fileID: 1533072514}
     - target: {fileID: 3612080925705374455, guid: 12ad99b3a0bf6154a8536dca11bdf229,
         type: 3}
+      propertyPath: audioS
+      value: 
+      objectReference: {fileID: 2124728583}
+    - target: {fileID: 3612080925705374455, guid: 12ad99b3a0bf6154a8536dca11bdf229,
+        type: 3}
       propertyPath: position.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -2427,6 +2448,12 @@ PrefabInstance:
 --- !u!4 &2039327919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6737123778733812117, guid: 12ad99b3a0bf6154a8536dca11bdf229,
+    type: 3}
+  m_PrefabInstance: {fileID: 2039327918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2124728583 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 240166064742330656, guid: 12ad99b3a0bf6154a8536dca11bdf229,
     type: 3}
   m_PrefabInstance: {fileID: 2039327918}
   m_PrefabAsset: {fileID: 0}
