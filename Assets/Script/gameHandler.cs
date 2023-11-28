@@ -16,16 +16,16 @@ public class gameHandler : MonoBehaviour
     private float health=100;
     private float maxHealth=100;
     private void Update() {  timer = Time.time;
-        print("timer= " + timer);
+       
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         float temp = timer;
        // Debug.Log("collider");
        
-        if (hit.gameObject.CompareTag("enmey") && temp > 3 + timer1)
+        if (hit.gameObject.CompareTag("enmey") && temp > 1 + timer1)
         {
-            Debug.Log("is hiting");
+           
             Damage(10);
               timer1 = temp;
         }
