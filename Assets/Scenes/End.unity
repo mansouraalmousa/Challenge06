@@ -163,6 +163,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2053659557415595136, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 381584703}
+    - target: {fileID: 2053659557415595136, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
+      propertyPath: characterCon
+      value: 
+      objectReference: {fileID: 1877578870}
+    - target: {fileID: 2053659557415595136, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 373545098}
     - target: {fileID: 2255655842596381750, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: m_PlaneDistance
@@ -390,7 +405,11 @@ PrefabInstance:
         type: 3}
       insertIndex: 0
       addedObject: {fileID: 373545098}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8631133216024163116, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1877578870}
   m_SourcePrefab: {fileID: 100100000, guid: 1ca750c6ffa8fa04bac0214330a05638, type: 3}
 --- !u!1 &366222935
 GameObject:
@@ -564,6 +583,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1877578869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &381584703 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8991770868366061781, guid: 1ca750c6ffa8fa04bac0214330a05638,
+    type: 3}
+  m_PrefabInstance: {fileID: 59053358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &386879274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3197467544844388417, guid: 12ad99b3a0bf6154a8536dca11bdf229,
@@ -2586,6 +2611,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 59053358}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &1877578870
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877578861}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2073939356
 GameObject:
   m_ObjectHideFlags: 0
