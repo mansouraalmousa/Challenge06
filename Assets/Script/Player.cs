@@ -17,10 +17,10 @@ public class Player : MonoBehaviour
     public float gravity = -9.81f;
     public Animator animator;
 
-    [Header("Player Jumping and velocity")]
+    [Header("velocity")]
     public float turnCalmTime = 0.1f;
     float turnCalmVelocity;
-    public float jumpRange = 1f;
+   
     Vector3 velocity;
    
    
@@ -32,15 +32,16 @@ public class Player : MonoBehaviour
         
 
 
-        velocity.y += gravity * Time.deltaTime;
-        characterCon.Move(velocity * Time.deltaTime);
-
+        
         playerMove();
        
     }
 
     void playerMove()
     {
+        velocity.y += gravity * Time.deltaTime;
+        characterCon.Move(velocity * Time.deltaTime);
+
         float horizontal_axis = Input.GetAxisRaw("Horizontal");
         float vertical_axis = Input.GetAxisRaw("Vertical");
         bool dead = false;

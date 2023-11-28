@@ -30,6 +30,7 @@ public class GunRycast : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(Player.transform.position,Player.transform.forward, out hit, Grange))
             {
+                
                 if (hit.transform.gameObject.tag== "enmey")
                 {
                     Destroy(hit.transform.gameObject);

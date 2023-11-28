@@ -200,8 +200,7 @@ PrefabInstance:
         type: 3}
       propertyPath: laser
       value: 
-      objectReference: {fileID: 6733362236909201765, guid: 69f57c5a1e37b274e902a502db5d3b4e,
-        type: 3}
+      objectReference: {fileID: 859192812}
     - target: {fileID: 471269105921931128, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: Grange
@@ -211,7 +210,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 1533072514}
+      objectReference: {fileID: 859192811}
     - target: {fileID: 471269105921931128, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: playerc
@@ -355,17 +354,17 @@ PrefabInstance:
     - target: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
@@ -375,12 +374,12 @@ PrefabInstance:
     - target: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
@@ -541,6 +540,10 @@ PrefabInstance:
         type: 3}
       insertIndex: 0
       addedObject: {fileID: 951255698}
+    - targetCorrespondingSourceObject: {fileID: 6980517293724080678, guid: 1ca750c6ffa8fa04bac0214330a05638,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 859192812}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8631133216024163116, guid: 1ca750c6ffa8fa04bac0214330a05638,
         type: 3}
@@ -1625,6 +1628,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &859192811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859192812}
+  m_Layer: 0
+  m_Name: gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &859192812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859192811}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.04, z: 0.581}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1533072529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927743707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1782,7 +1816,6 @@ GameObject:
   - component: {fileID: 951255695}
   - component: {fileID: 951255697}
   - component: {fileID: 951255696}
-  - component: {fileID: 951255699}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1908,19 +1941,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533072529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &951255699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951255694}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb52b2d9e5cc0e04c8665fbe1fa4de55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 180
 --- !u!1 &957711807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2425,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enmey
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580713168449216979, guid: 12ad99b3a0bf6154a8536dca11bdf229,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580713168449216979, guid: 12ad99b3a0bf6154a8536dca11bdf229,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3612080925705374455, guid: 12ad99b3a0bf6154a8536dca11bdf229,
         type: 3}

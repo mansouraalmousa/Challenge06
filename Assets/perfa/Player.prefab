@@ -545,7 +545,6 @@ GameObject:
   - component: {fileID: 8583367775304167276}
   - component: {fileID: 7271860358175910518}
   - component: {fileID: 471269105921931128}
-  - component: {fileID: 3444502017238081705}
   - component: {fileID: 2053659557415595136}
   - component: {fileID: 1478507115373406919}
   m_Layer: 0
@@ -745,29 +744,6 @@ MonoBehaviour:
   Frate: 0.2
   laserDuration: 0.05
   Player: {fileID: 0}
---- !u!136 &3444502017238081705
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8631133216024163116}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2.346887
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.54846597, z: -6.722731e-10}
 --- !u!114 &2053659557415595136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,7 +763,6 @@ MonoBehaviour:
   gravity: -9.81
   animator: {fileID: 0}
   turnCalmTime: 0.1
-  jumpRange: 1
 --- !u!143 &1478507115373406919
 CharacterController:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,23 +10,29 @@ using UnityEngine.UI;
 public class gameHandler : MonoBehaviour
 {
     public Slider slider;
-  
-  
+
+    float timer;
+    float timer1;
     private float health=100;
     private float maxHealth=100;
-   
-
-
-    private void OnCollisionEnter(Collision collision)
+    private void Update() {  timer = Time.time;
+        print("timer= " + timer);
+    }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        // Start is called before the first frame update
-
-        
-        if (collision.gameObject.CompareTag("enmey"))
+        float temp = timer;
+       // Debug.Log("collider");
+       
+        if (hit.gameObject.CompareTag("enmey") && temp > 3 + timer1)
         {
-            Damage(20);
+            Debug.Log("is hiting");
+            Damage(10);
+              timer1 = temp;
         }
     }
+   
+ 
+    
     // Update is called once per frame
 
     public void Damage(int damage)
