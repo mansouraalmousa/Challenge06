@@ -74,18 +74,18 @@ public class Player : MonoBehaviour
     {
         SceneManager.LoadScene("Gameover");
     }
-    private void OnCollisionEnter(Collision collision)
+   
+    private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (collision.gameObject.CompareTag("Pionts"))
-        {
+
+        if (hit.gameObject.CompareTag("Pionts")){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
-        if (collision.gameObject.CompareTag("End"))
+        if (hit.gameObject.CompareTag("End"))
         {
             SceneManager.LoadScene(4);
         }
-
-
     }
 }
   
