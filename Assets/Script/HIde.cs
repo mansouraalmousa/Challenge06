@@ -9,10 +9,11 @@ public class Hide : MonoBehaviour
     public GameObject[] game;
         public GameObject[] s;
         private int f;
- 
-        public void HideButtons()
+    [SerializeField] AudioSource audioS;
+
+    public void HideButtons()
         {
-       
+       audioS.Play();
             foreach (var item in game)
             {
                 Debug.Log(item);
