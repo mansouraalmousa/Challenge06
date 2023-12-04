@@ -23,7 +23,7 @@ public class gameHandler : MonoBehaviour
         float temp = timer;
        // Debug.Log("collider");
        
-        if (hit.gameObject.CompareTag("enmey") && temp > 1 + timer1)
+        if (hit.gameObject.CompareTag("enmey") && temp > 1 + timer1 || (hit.gameObject.CompareTag("boss") && temp > 1 + timer1))
         {
            
             Damage(10);

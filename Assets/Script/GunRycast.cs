@@ -35,7 +35,11 @@ public class GunRycast : MonoBehaviour
                 {
                     Destroy(hit.transform.gameObject);
                 }
-                
+
+                if (hit.transform.gameObject.tag == "boss")
+                {
+                    Destroy(hit.transform.gameObject);
+                }
             }
            
             StartCoroutine(ShootLaser());
